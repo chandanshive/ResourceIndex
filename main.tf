@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ca-central-1"
+}
+
 resource "aws_s3_bucket" "accurics-foreach-example-bucket" {
   acl = "log-delivery-write"
   for_each = toset( ["accurics-foreach-example-bucket1", "accurics-foreach-example-bucket2", "accurics-foreach-example-bucket3"] )
