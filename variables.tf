@@ -1,6 +1,6 @@
-variable "default-aws-region" {
-  default = "eu-west-1"
-}
+#variable "default-aws-region" {
+#  default = "eu-west-1"
+#}
 
 variable "tags-tool" {
   default = "Terraform"
